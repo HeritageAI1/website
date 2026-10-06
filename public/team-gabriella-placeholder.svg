@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="560" viewBox="0 0 480 560" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="30" y1="0" x2="450" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#E7F0FC"/><stop offset="1" stop-color="#C8D9F0"/></linearGradient>
+    <linearGradient id="coat" x1="140" y1="300" x2="340" y2="560" gradientUnits="userSpaceOnUse"><stop stop-color="#1E4F88"/><stop offset="1" stop-color="#102744"/></linearGradient>
+  </defs>
+  <rect width="480" height="560" rx="24" fill="url(#bg)"/>
+  <circle cx="385" cy="102" r="64" fill="#fff" fill-opacity=".36"/>
+  <path d="M68 560c6-104 67-177 172-177s166 73 172 177H68Z" fill="url(#coat)"/>
+  <path d="m193 390 47 64 47-64-20-25h-54l-20 25Z" fill="#F9FBFE"/>
+  <ellipse cx="240" cy="243" rx="91" ry="112" fill="#B97858"/>
+  <path d="M150 238c-8-91 30-145 95-145 69 0 104 49 87 141-13-14-21-35-25-57-37 29-83 42-148 39l-9 22Z" fill="#28384A"/>
+  <path d="M188 250c9-6 19-6 28 0m48 0c9-6 19-6 28 0" stroke="#45352F" stroke-width="6" stroke-linecap="round"/>
+  <path d="M221 305c12 9 26 9 38 0" stroke="#8D5143" stroke-width="6" stroke-linecap="round"/>
+  <path d="m189 416 51 38 51-38" stroke="#398CFF" stroke-opacity=".8" stroke-width="3"/>
+  <rect x="28" y="28" width="424" height="504" rx="18" stroke="#fff" stroke-opacity=".65" stroke-width="2"/>
+</svg>
