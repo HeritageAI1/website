@@ -3,27 +3,27 @@ import './App.css'
 
 // Data arrays keep the content structured and easy to update.
 const metrics = [
-  { value: '3x', label: 'faster decisions' },
-  { value: '42%', label: 'lower operational drag' },
-  { value: '24/7', label: 'AI-enabled support' },
-  { value: '90 days', label: 'to business impact' },
+  { value: '100x', label: 'faster response' },
+  { value: '99.8%', label: 'response accuracy' },
+  { value: '24 / 7', label: 'human-led support' },
+  { value: '10 days', label: 'to business impact' },
 ]
 
 const problemPoints = [
   {
-    title: 'Legacy workflows stall growth',
+    title: 'Physical and geographic barriers to access',
     description:
-      'Teams are buried in manual reporting, repetitive admin, and fragmented tools that slow each decision to a crawl.',
+      'Fragile physical records, limited site capacities and geographic dispersion make archival access very challenging, while current digitisation efforts remain slow and manually bottlenecked.',
   },
   {
-    title: 'AI hype is outpacing execution',
+    title: 'Operational delays and errors',
     description:
-      'Many organizations have pilot ideas but lack a roadmap, governance, and practical operating model to scale them safely.',
+      'Manual workflows force skilled archivists into administrative loops, causing request delays averaging 10 to 29 days, while human-led database searches regularly miss vital context and return incomplete records.',
   },
   {
-    title: 'Opportunity is being lost daily',
+    title: 'AI solutions not heritage-ready',
     description:
-      'Without intelligent automation, time is spent on tasks that could be routed, predicted, or optimized by systems designed for the job.',
+      'Current AI tools are not designed for heritage data, and require significant technical expertise to deploy. This leaves many institutions unable to leverage AI for their archives, or reliant on external vendors with limited domain knowledge.',
   },
 ]
 
@@ -261,7 +261,7 @@ function App() {
             <p className="eyebrow">Unlocking AI for Heritage</p>
             <h1>Heritage AI</h1>
             <p className="lede">
-              Heritage AI helps institutions unlock the power of their archives through AI-driven solutions, enabling faster results and more efficient workflows without compromising on quality or accuracy.
+              Heritage AI helps institutions realise the potential of their archives through AI-driven solutions, without compromising on quality or accuracy.
             </p>
 
             <div className="cta-row">
@@ -274,9 +274,10 @@ function App() {
             </div>
 
             <ul className="trust-list" aria-label="Key Heritage AI strengths">
-              <li>Strategy-first delivery</li>
-              <li>Responsible AI design</li>
-              <li>High-impact automation</li>
+              <li>Human-centred</li>
+              <li>Responsible</li>
+              <li>Secure</li>
+              <li>Scalable</li>
             </ul>
           </div>
 
@@ -297,7 +298,7 @@ function App() {
         <section id="problem" className="section problem-section">
           <div className="section-heading reveal">
             <p className="eyebrow">The problem</p>
-            <h2>Too many teams are stuck between ambition and execution.</h2>
+            <h2>Limited archival access hinder institutions, with current AI solutions failing to meet their unique needs.</h2>
           </div>
 
           <div className="problem-grid">
@@ -352,29 +353,29 @@ function App() {
         <section className="section principle-section">
           <div className="principle-copy reveal">
             <p className="eyebrow">How we work</p>
-            <h2>We design AI that fits the business, not the other way around.</h2>
+            <h2>Our systems are optimised for heritage.</h2>
           </div>
 
           <div className="timeline reveal" aria-label="Heritage AI operating model">
             <div className="timeline-step">
               <span>01</span>
               <div>
-                <h3>Diagnose</h3>
-                <p>Clarify your biggest bottlenecks, decision points, and growth constraints.</p>
+                <h3>Innovate</h3>
+                <p>We have created an innovative architecture tailored for heritage data.</p>
               </div>
             </div>
             <div className="timeline-step">
               <span>02</span>
               <div>
-                <h3>Design</h3>
-                <p>Prototype the right AI workflows, data model, and user experience for the task.</p>
+                <h3>Test</h3>
+                <p>Our systems are rigorously tested to ensure they meet the strict security and privacy standards required for heritage.</p>
               </div>
             </div>
             <div className="timeline-step">
               <span>03</span>
               <div>
                 <h3>Deploy</h3>
-                <p>Launch intelligently, track measurable outcomes, and refine through real-world use.</p>
+                <p>We work alongside heritage institutions to ensure that staff are properly trained and supported in using our systems.</p>
               </div>
             </div>
           </div>
@@ -407,7 +408,7 @@ function App() {
         <section id="contact" className="section contact-section reveal">
           <div className="contact-panel">
             <p className="eyebrow">Ready to begin?</p>
-            <h2>Build the next chapter of your business with AI that actually moves the needle.</h2>
+            <h2>Deploy the power of AI for your heritage collections.</h2>
             <a href="mailto:hello@heritageai.co" className="primary-button">
               hello@heritageai.co
             </a>
@@ -417,7 +418,7 @@ function App() {
 
       <footer className="site-footer reveal">
         <span>Heritage AI</span>
-        <span>Strategy • Systems • Growth</span>
+        <span>Secure • Powerful • Human-centered</span>
       </footer>
     </div>
   )
