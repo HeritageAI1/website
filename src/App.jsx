@@ -62,7 +62,7 @@ const team = [
     name: 'Dr. Gabriella Howell MBE',
     role: 'Founder & Business Strategy Lead',
     bio: 'Dr Gabriella Howell MBE is a distinguished heritage professional and academic with over a decade of experience across the UK and the Caribbean. As the leader of Heritage AI, Dr Howell leverages deep industry insight gained from active board roles, and her extensive research and publications, to guide organisations in harnessing AI for heritage preservation and innovation.',
-    image: '/matt_image.png',
+    image: '/gabi_image.jpg',
     label: 'Founder',
   },
   {
@@ -79,7 +79,7 @@ const archiveChats = [
   {
     query: 'Why was the North Quay restoration delayed in 1913?',
     answer:
-      'The work paused twice: first after the March flood damaged stored timber, then while the harbor board disputed the revised cost. The minutes show approval resumed on 18 September.',
+      'The work paused twice: first after the March flood damaged stored timber, then while the harbour board disputed the revised cost. The minutes show approval resumed on 18th September.',
     source: 'Harbor Board Minutes, 1913 · pp. 42, 88',
   },
   {
@@ -140,7 +140,7 @@ function ArchiveChatDemo() {
             setNewChatPressed(false)
             setActiveChatIndex((index) => (index + 1) % archiveChats.length)
           }, 420)
-        }, 4200)
+        }, 5400)
       }, 450)
     }
 
@@ -237,12 +237,12 @@ function App() {
   }, [])
 
   return (
-    <div className="page-shell">
+    <div id="top" className="page-shell">
       <header className="topbar reveal">
-        <div className="brand-wrap" aria-label="Heritage AI home">
+        <a className="brand-wrap" href="#top" aria-label="Heritage AI — back to top">
           <span className="brand-mark">H</span>
           <span className="brand-name">Heritage AI</span>
-        </div>
+        </a>
 
         <nav className="main-nav" aria-label="Main navigation">
           <a href="#problem">Problem</a>
@@ -251,7 +251,7 @@ function App() {
         </nav>
 
         <a className="nav-cta" href="#contact">
-          Book a consult
+          Contact us
         </a>
       </header>
 
@@ -277,7 +277,7 @@ function App() {
               <li>Human-centred</li>
               <li>Responsible</li>
               <li>Secure</li>
-              <li>Scalable</li>
+              <li>Powerful</li>
             </ul>
           </div>
 
@@ -409,8 +409,8 @@ function App() {
           <div className="contact-panel">
             <p className="eyebrow">Ready to begin?</p>
             <h2>Deploy the power of AI for your heritage collections.</h2>
-            <a href="mailto:hello@heritageai.co" className="primary-button">
-              hello@heritageai.co
+            <a href="mailto:hello@heritage-ai.co.uk" className="primary-button">
+              hello@heritage-ai.co.uk
             </a>
           </div>
         </section>

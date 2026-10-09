@@ -23,12 +23,17 @@
   z-index: 20;
 }
 
+section[id] {
+  scroll-margin-top: 112px;
+}
+
 .brand-wrap {
   display: inline-flex;
   align-items: center;
   gap: 12px;
   font-weight: 700;
   color: #f5f7ff;
+  text-decoration: none;
 }
 
 .brand-mark {
@@ -960,6 +965,10 @@
 }
 
 @media (max-width: 640px) {
+  section[id] {
+    scroll-margin-top: 172px;
+  }
+
   .page-shell {
     width: min(100% - 20px, 1200px);
   }
