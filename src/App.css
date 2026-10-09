@@ -799,9 +799,9 @@ section[id] {
 
 .principle-section {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
-  gap: 28px;
+  gap: 48px;
 }
 
 .timeline {
@@ -810,23 +810,12 @@ section[id] {
 }
 
 .timeline-step {
-  display: grid;
-  grid-template-columns: 56px 1fr;
-  gap: 18px;
-  align-items: start;
-  padding: 18px 18px 18px 0;
+  padding: 18px 0;
   border-bottom: 1px solid rgba(164, 180, 255, 0.14);
 }
 
-.timeline-step span {
-  display: inline-grid;
-  place-items: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 16px;
-  background: rgba(124, 228, 215, 0.09);
-  color: #7ce4d7;
-  font-weight: 700;
+.timeline-step:first-child {
+  padding-top: 0;
 }
 
 .team-grid {

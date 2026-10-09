@@ -298,7 +298,7 @@ function App() {
         <section id="problem" className="section problem-section">
           <div className="section-heading reveal">
             <p className="eyebrow">The problem</p>
-            <h2>Limited archival access hinder institutions, with current AI solutions failing to meet their unique needs.</h2>
+            <h2>Limited archival access and legacy systems</h2>
           </div>
 
           <div className="problem-grid">
@@ -358,21 +358,18 @@ function App() {
 
           <div className="timeline reveal" aria-label="Heritage AI operating model">
             <div className="timeline-step">
-              <span>01</span>
               <div>
                 <h3>Innovate</h3>
-                <p>We have created an innovative architecture tailored for heritage data.</p>
+                <p>We have created an innovative architecture that allows AI to understand archival content and context, and create accurate responses grounded by citations.</p>
               </div>
             </div>
             <div className="timeline-step">
-              <span>02</span>
               <div>
                 <h3>Test</h3>
                 <p>Our systems are rigorously tested to ensure they meet the strict security and privacy standards required for heritage.</p>
               </div>
             </div>
             <div className="timeline-step">
-              <span>03</span>
               <div>
                 <h3>Deploy</h3>
                 <p>We work alongside heritage institutions to ensure that staff are properly trained and supported in using our systems.</p>
