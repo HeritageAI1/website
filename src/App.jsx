@@ -14,16 +14,22 @@ const problemPoints = [
     title: 'Physical and geographic barriers to access',
     description:
       'Fragile physical records, limited site capacities and geographic dispersion make archival access very challenging, while current digitisation efforts remain slow and manually bottlenecked.',
+    image:
+      'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80',
   },
   {
     title: 'Operational delays and errors',
     description:
       'Manual workflows force skilled archivists into administrative loops, causing request delays averaging 10 to 29 days, while human-led database searches regularly miss vital context and return incomplete records.',
+    image:
+      'https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=800&q=80',
   },
   {
     title: 'AI solutions not heritage-ready',
     description:
       'Current AI tools are not designed for heritage data, and require significant technical expertise to deploy. This leaves many institutions unable to leverage AI for their archives, or reliant on external vendors with limited domain knowledge.',
+    image:
+      'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
   },
 ]
 
@@ -69,7 +75,7 @@ const team = [
     name: 'Matt Gillie',
     role: 'AI Lead & Systems Architect',
     bio: 'Matt builds powerful and secure AI systems that underpin the Heritage AI platform. He has worked for frontier labs including OpenAI and Anthropic, helping to train and align cutting edge models, along with technical experience in national security. He is passionate about applying AI to heritage and cultural preservation, ensuring that these systems are both effective and responsible.',
-    image: '/matt_image.png',
+    image: '/matt_image.jpeg',
     label: 'Co-Founder & AI Lead',
   },
 
@@ -301,50 +307,21 @@ function App() {
             <h2>Limited archival access and legacy systems</h2>
           </div>
 
+
+
           <div className="problem-grid">
             {problemPoints.map((point) => (
               <article key={point.title} className="info-card reveal">
-                <span className="card-index">0{problemPoints.indexOf(point) + 1}</span>
-                <h3>{point.title}</h3>
-                <p>{point.description}</p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        <section id="services" className="section offer-section">
-          <div className="section-heading reveal">
-            <p className="eyebrow">Choose your archive tier</p>
-            <h2>Two ways to bring your collections within reach.</h2>
-            <p className="tier-intro">
-              Start with essential cloud tools or unlock a fully managed, secure archive transformation.
-            </p>
-          </div>
-
-          <div className="tier-comparison">
-            {tiers.map((tier) => (
-              <article key={tier.name} className={`tier-card tier-${tier.name.toLowerCase()} reveal`}>
-                <div className="tier-card-topline">
-                  <span className="tier-label">{tier.label}</span>
-                  {tier.name === 'Gold' && <span className="tier-recommended">MOST CAPABLE</span>}
+                <div
+                  className="info-card-media"
+                  style={{ backgroundImage: `url("${point.image}")` }}
+                  aria-hidden="true"
+                />
+                <div className="info-card-body">
+                  <span className="card-index">0{problemPoints.indexOf(point) + 1}</span>
+                  <h3>{point.title}</h3>
+                  <p>{point.description}</p>
                 </div>
-                <div className="tier-heading-row">
-                  <h3>{tier.name}</h3>
-                  <span className="tier-swatch" aria-hidden="true" />
-                </div>
-                <p className="tier-audience">{tier.audience}</p>
-                <p className="tier-description">{tier.description}</p>
-                <div className="tier-divider" />
-                <h4>Included capabilities</h4>
-                <ul className="tier-feature-list">
-                  {tier.features.map((feature) => (
-                    <li key={feature}>
-                      <span className="tier-check" aria-hidden="true">✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <a className="tier-cta" href="#contact">Discuss {tier.name}</a>
               </article>
             ))}
           </div>
@@ -402,12 +379,51 @@ function App() {
           </div>
         </section>
 
+        <section id="services" className="section offer-section">
+          <div className="section-heading reveal">
+            <p className="eyebrow">Choose your archive tier</p>
+            <h2>Two ways to bring your collections within reach.</h2>
+            <p className="tier-intro">
+              Start with essential cloud tools or unlock a fully managed, secure archive transformation.
+            </p>
+          </div>
+
+          <div className="tier-comparison">
+            {tiers.map((tier) => (
+              <article key={tier.name} className={`tier-card tier-${tier.name.toLowerCase()} reveal`}>
+                <div className="tier-card-topline">
+                  <span className="tier-label">{tier.label}</span>
+                  {tier.name === 'Gold' && <span className="tier-recommended">MOST CAPABLE</span>}
+                </div>
+                <div className="tier-heading-row">
+                  <h3>{tier.name}</h3>
+                  <span className="tier-swatch" aria-hidden="true" />
+                </div>
+                <p className="tier-audience">{tier.audience}</p>
+                <p className="tier-description">{tier.description}</p>
+                <div className="tier-divider" />
+                <h4>Included capabilities</h4>
+                <ul className="tier-feature-list">
+                  {tier.features.map((feature) => (
+                    <li key={feature}>
+                      <span className="tier-check" aria-hidden="true">✓</span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a className="tier-cta" href="#contact">Discuss {tier.name}</a>
+              </article>
+            ))}
+          </div>
+        </section>
+
+
         <section id="contact" className="section contact-section reveal">
           <div className="contact-panel">
             <p className="eyebrow">Ready to begin?</p>
             <h2>Deploy the power of AI for your heritage collections.</h2>
             <a href="mailto:hello@heritage-ai.co.uk" className="primary-button">
-              hello@heritage-ai.co.uk
+              Contact us
             </a>
           </div>
         </section>

@@ -1,16 +1,28 @@
 :root {
- font-family: Inter, "Segoe UI", sans-serif;
- line-height: 1.5;
- font-weight: 400;
- color: #edf5ff;
- background:
-   radial-gradient(circle at top, rgba(85, 104, 255, 0.2), transparent 30%),
-   linear-gradient(180deg, #060b13 0%, #0b1220 35%, #070d17 100%);
- font-synthesis: none;
- text-rendering: optimizeLegibility;
- -webkit-font-smoothing: antialiased;
- -moz-osx-font-smoothing: grayscale;
- color-scheme: dark;
+  --paper: #f7f2ea;
+  --paper-strong: #efe1cf;
+  --paper-soft: #f3f7fb;
+  --ink: #1f3246;
+  --muted: #536b7d;
+  --heritage: #9e6c3d;
+  --heritage-deep: #734c2d;
+  --heritage-soft: #f2e0ca;
+  --navy: #1d3d5b;
+  --navy-soft: #dfeaf4;
+  --blue: #4a7194;
+  --blue-soft: #e7eef8;
+  font-family: Inter, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top, rgba(158, 108, 61, 0.11), transparent 20%),
+    linear-gradient(180deg, var(--paper) 0%, #f3f2ee 30%, #eef3f6 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
 }
 
 * {
@@ -25,7 +37,8 @@ body {
  margin: 0;
  min-width: 320px;
  min-height: 100vh;
- background: #070d17;
+ background: #f7f4ee;
+ color: #18314b;
 }
 
 img {
