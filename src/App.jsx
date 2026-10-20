@@ -15,7 +15,7 @@ const problemPoints = [
     description:
       'Fragile physical records, limited site capacities and geographic dispersion make archival access very challenging, while current digitisation efforts remain slow and manually bottlenecked.',
     image:
-      'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80',
+      '/geo_barr.jpeg',
   },
   {
     title: 'Operational delays and errors',
@@ -29,7 +29,7 @@ const problemPoints = [
     description:
       'Current AI tools are not designed for heritage data, and require significant technical expertise to deploy. This leaves many institutions unable to leverage AI for their archives, or reliant on external vendors with limited domain knowledge.',
     image:
-      'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=800&q=80',
+      '/ops_bad.jpg',
   },
 ]
 
@@ -247,7 +247,7 @@ function App() {
       <header className="topbar reveal">
         <a className="brand-wrap" href="#top" aria-label="Heritage AI — back to top">
           <span className="brand-mark">H</span>
-          <span className="brand-name">Heritage AI</span>
+          <span className="brand-name">Heritage <span className="heading-accent">AI</span></span>
         </a>
 
         <nav className="main-nav" aria-label="Main navigation">
@@ -265,7 +265,7 @@ function App() {
         <section className="hero section">
           <div className="hero-copy reveal">
             <p className="eyebrow">Unlocking AI for Heritage</p>
-            <h1>Heritage AI</h1>
+            <h1>Heritage <span className="heading-accent">AI</span></h1>
             <p className="lede">
               Heritage AI helps institutions realise the potential of their archives through AI-driven solutions, without compromising on quality or accuracy.
             </p>
